@@ -1,0 +1,2380 @@
+
+@import url("../zcm7cly.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  overflow-y: scroll; }
+
+* {
+  box-sizing: border-box;
+  line-height: 1.4; }
+
+@font-face {
+  font-family: 'FranklinGotExtCond';
+  src: url("webfonts/FranklinGotExtCond-Regular.eot");
+  src: url("webfonts/FranklinGotExtCond-Regular.eot#iefix") format("embedded-opentype"), url("webfonts/FranklinGotExtCond-Regular.woff") format("woff"), url("https://donate.battersea.org.uk/css/webfonts/FranklinGotExtCond-Regular.tff") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+h1, .mega {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-family: 'FranklinGotExtCond';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem; }
+
+h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-family: 'FranklinGotExtCond';
+  text-transform: uppercase;
+  padding-bottom: 1.275rem; }
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 1rem; }
+
+h4 {
+  font-size: 1.375rem;
+  line-height: 1.375rem;
+  font-weight: 300;
+  margin-bottom: 0.75rem; }
+
+p {
+  line-height: 1.5;
+  font-size: 1.1875rem; }
+  p strong {
+    font-weight: 600; }
+  p + p {
+    margin-top: 1rem; }
+
+@media only screen and (max-width: 766px) {
+  h1, .mega {
+    font-size: 3rem;
+    line-height: 3rem; }
+  h2 {
+    font-size: 1.625rem;
+    line-height: 1.625rem;
+    padding-bottom: 0.75rem; }
+  h3 {
+    font-size: 1.3125rem;
+    line-height: 1.3125rem; }
+  h4 {
+    font-size: 1rem;
+    line-height: 1rem; } }
+
+@media print {
+  #printLogo {
+    display: block !important; }
+  .progressBar, header .page, .buttonBar {
+    display: none; }
+  .ddSummary {
+    font-size: 1em; }
+  form .requiredMessage {
+    display: none; }
+  header {
+    padding-top: 0; }
+  footer {
+    page-break-before: always; }
+    footer * {
+      color: #000 !important; }
+  main.thanks > article aside #share {
+    display: none; }
+  main.thanks > article aside #donation_summary {
+    text-align: left;
+    padding: 0; }
+  main.thanks section.bodyText {
+    width: 100% !important;
+    float: none; }
+  .ddGuarantee {
+    width: 100%; }
+    .ddGuarantee img.dd {
+      position: relative;
+      top: -1em; }
+    .ddGuarantee ul {
+      list-style-type: disc; }
+      .ddGuarantee ul li {
+        padding-left: .3em;
+        margin-left: 2em; }
+  main h1, main h2, main h3, main h4 {
+    color: #000 !important; }
+  main #thanks_img {
+    display: none; }
+  main #contactPreferences {
+    display: none; }
+  main .heroBox {
+    padding: 0; }
+    main .heroBox h1, main .heroBox h2, main .heroBox p {
+      color: #000 !important; }
+    main .heroBox .ddSummary p {
+      color: #000; } }
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 200px;
+  line-height: 1.3em;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #c2c2c2;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.popover.top {
+  margin-top: -10px; }
+
+.popover.right {
+  margin-left: 10px; }
+
+.popover.bottom {
+  margin-top: 10px; }
+
+.popover.left {
+  margin-left: -10px; }
+
+.popover-title {
+  margin: 0;
+  padding: 8px 14px;
+  font-size: 1em;
+  background-color: #0094db;
+  color: #fff;
+  border-radius: 0; }
+
+.popover-content {
+  padding: 9px 14px; }
+
+.popover > .arrow,
+.popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }
+
+.popover > .arrow {
+  border-width: 11px; }
+
+.popover > .arrow:after {
+  border-width: 10px;
+  content: ""; }
+
+.popover.top > .arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-bottom-width: 0;
+  border-top-color: #999999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  bottom: -11px; }
+
+.popover.top > .arrow:after {
+  content: " ";
+  bottom: 1px;
+  margin-left: -10px;
+  border-bottom-width: 0;
+  border-top-color: #ffffff; }
+
+.popover.right > .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-left-width: 0;
+  border-right-color: #999999;
+  border-right-color: rgba(0, 0, 0, 0.25); }
+
+.popover.right > .arrow:after {
+  content: " ";
+  left: 1px;
+  bottom: -10px;
+  border-left-width: 0;
+  border-right-color: #ffffff; }
+
+.popover.bottom > .arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999999;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  top: -11px; }
+
+.popover.bottom > .arrow:after {
+  content: " ";
+  top: 1px;
+  margin-left: -10px;
+  border-top-width: 0;
+  border-bottom-color: #ffffff; }
+
+.popover.left > .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999999;
+  border-left-color: rgba(0, 0, 0, 0.25); }
+
+.popover.left > .arrow:after {
+  content: " ";
+  right: 1px;
+  border-right-width: 0;
+  border-left-color: #ffffff;
+  bottom: -10px; }
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden; }
+  .page .smaller {
+    max-width: 760px; }
+
+.page-large {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden; }
+
+.page-small {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden; }
+
+@media only screen and (min-width: 767px) and (max-width: 959px) {
+  .page, .page-large, .page-small {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; } }
+
+@media only screen and (min-width: 360px) and (max-width: 766px) {
+  .page, .page-large, .page-small {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; }
+    .page .smaller, .page-large .smaller, .page-small .smaller {
+      max-width: 100%; } }
+
+@media only screen and (max-width: 359px) {
+  .page, .page-large, .page-small {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .page .smaller, .page-large .smaller, .page-small .smaller {
+      max-width: 100%; } }
+
+.hidden {
+  display: none; }
+
+a {
+  color: #011D49;
+  text-decoration: underline; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+*:focus {
+  outline: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+header {
+  padding: 2rem 0;
+  border-bottom: 1px solid #E5E5E5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  background-color: white; }
+  header .page:before, header .page:after, header .page-large:before, header .page-large:after {
+    content: "";
+    display: table; }
+  header .page:after, header .page-large:after {
+    clear: both; }
+  header a {
+    display: block;
+    float: left; }
+    header a #siteLogo {
+      background-image: url(../images/logo.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 128px;
+      height: 83.89207px; }
+  header .right {
+    float: right;
+    height: 83.89207px;
+    display: flex;
+    align-items: center;
+    font-weight: 700; }
+    header .right img.pad {
+      margin-right: 0.75rem;
+      padding-bottom: 6px; }
+    header .right img.dd-image {
+      margin-left: 2rem;
+      max-height: 100%;
+      max-width: 100%; }
+
+main {
+  padding-top: calc(149px + 3rem);
+  float: left;
+  width: 100%; }
+  main.no-padded-top {
+    padding-top: 149px; }
+
+@media only screen and (min-width: 767px) and (max-width: 959px) {
+  header {
+    padding: 1.25rem 0; }
+  main {
+    padding-top: calc(124px + 2rem); }
+    main.no-padded-top {
+      padding-top: 124px; } }
+
+@media only screen and (max-width: 766px) {
+  header {
+    padding: 1.25rem 0; }
+    header a #siteLogo {
+      width: 80px;
+      height: 52.43254px; }
+    header .right {
+      height: 52.43254px; }
+      header .right img.dd-image {
+        width: 75px; }
+  main {
+    padding-top: calc(93px + 1.5rem); }
+    main.no-padded-top {
+      padding-top: 93px; } }
+
+@media only screen and (max-width: 499px) {
+  header a #siteLogo {
+    width: 60px;
+    height: 39.32441px; }
+  header .right {
+    height: 39.32441px; }
+    header .right p {
+      font-size: 0.95rem; }
+    header .right img.pad {
+      width: 1.5rem;
+      padding-bottom: 0;
+      margin-right: 0.25rem; }
+    header .right img.dd-image {
+      margin-left: 0;
+      width: 50px;
+      margin-left: 0.75rem; }
+  main {
+    padding-top: calc(80px + 1.5rem); }
+    main.no-padded-top {
+      padding-top: 80px; } }
+
+footer .helpAndSecurity {
+  margin-bottom: 3.5rem; }
+  footer .helpAndSecurity .page, footer .helpAndSecurity .page-large {
+    display: flex;
+    flex-wrap: wrap; }
+    footer .helpAndSecurity .page:before, footer .helpAndSecurity .page:after, footer .helpAndSecurity .page-large:before, footer .helpAndSecurity .page-large:after {
+      content: "";
+      display: table; }
+    footer .helpAndSecurity .page:after, footer .helpAndSecurity .page-large:after {
+      clear: both; }
+  footer .helpAndSecurity article {
+    float: left;
+    width: calc(50% - 0.79rem);
+    margin-right: 1.5rem;
+    padding: 2rem;
+    background-color: #f5f5f5; }
+    footer .helpAndSecurity article:nth-child(even) {
+      margin-right: 0; }
+    footer .helpAndSecurity article p {
+      margin-bottom: 1rem; }
+
+footer .blue {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #011D49; }
+  footer .blue * {
+    color: white; }
+  footer .blue .page, footer .blue .page-large {
+    text-align: center; }
+  footer .blue helpAndSecurity a {
+    color: white; }
+  footer .blue #regulator {
+    margin-top: 2rem;
+    width: 200px;
+    margin-bottom: 2rem; }
+  footer .blue h5 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1875rem;
+    font-weight: 300; }
+  footer .blue .godonate {
+    margin-top: 1rem;
+    font-size: 1rem; }
+  footer .blue ul {
+    text-align: center; }
+    footer .blue ul li {
+      display: inline-block; }
+      footer .blue ul li a {
+        display: block; }
+    footer .blue ul.link {
+      margin-bottom: 2rem; }
+      footer .blue ul.link li {
+        margin: 0 2rem; }
+        footer .blue ul.link li a {
+          font-weight: 700;
+          text-decoration: none;
+          font-size: 1.1rem;
+          line-height: 1.5; }
+          footer .blue ul.link li a:hover, footer .blue ul.link li a:focus {
+            text-decoration: underline; }
+    footer .blue ul.social li {
+      margin: 0 0.25rem; }
+      footer .blue ul.social li:first-child {
+        margin-left: 0; }
+      footer .blue ul.social li:last-child {
+        margin-right: 0; }
+      footer .blue ul.social li a {
+        width: 2.7rem;
+        height: 2.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: #011D49;
+        border-radius: 50%; }
+        footer .blue ul.social li a img {
+          width: 45%; }
+        footer .blue ul.social li a.facebook img {
+          width: 50%; }
+        footer .blue ul.social li a.twitter img {
+          width: 52%; }
+        footer .blue ul.social li a.youtube img {
+          width: 57%; }
+        footer .blue ul.social li a.instagram img {
+          width: 54%; }
+        footer .blue ul.social li a.email img {
+          width: 54%; }
+
+@media only screen and (max-width: 959px) {
+  footer .helpAndSecurity {
+    margin-bottom: 1.5rem; }
+    footer .helpAndSecurity article {
+      width: 100%;
+      margin-right: 0; }
+      footer .helpAndSecurity article + article {
+        margin-top: 2rem; }
+  footer .blue ul {
+    text-align: center; }
+    footer .blue ul li {
+      display: inline-block; }
+      footer .blue ul li a {
+        display: block; }
+    footer .blue ul.link {
+      margin-bottom: 2rem; }
+      footer .blue ul.link li {
+        display: block; }
+        footer .blue ul.link li + li {
+          margin-top: 0.65rem; } }
+
+@media only screen and (max-width: 359px) {
+  footer .helpAndSecurity article {
+    padding: 1.25rem; } }
+
+/*.progressBar {
+    position: relative;
+    font-weight: 700;
+    min-height: 54px;
+
+    & + form {
+        padding-top: 0;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin: 0;
+            padding: .5em 1em .5em 0;
+            line-height: 1.25;
+            text-align: center;
+            color: $darkGrey;
+
+            span {
+                display: inline-block;
+                text-indent: -9999px;
+                font-size: 1.3em;
+                width: 0;
+
+                & + span {
+                    font-family: Action,Arial,Helvetica,sans-serif;
+                    margin-right: .25em;
+                    text-indent: 0;
+                    height: 1.25em;
+                    width: 1.25em;
+                    text-align: center;
+                    color: #fff;
+                    background-color: $darkGrey;
+                    border-radius: 50%;
+                    padding: .1em;
+                    position: relative;
+                    top: -10px;
+                }
+            }
+
+            &.past {
+                span + span {
+                    color: transparent;
+                    background: $darkGrey url(../images/tick_white.png) no-repeat center;
+                }
+            }
+
+            &.current {
+                color: $black;
+
+                span {
+                    background-color: $buttonColour;
+                    color: $white;
+                }
+
+                p {
+                    text-indent: 0;
+                    color: $buttonColour;
+                }
+            }
+
+            p {
+                display: inline-block;
+            }
+        }
+    }
+
+    ul li {
+
+        &.current p {
+            display: inline-block;
+        }
+    }
+}*/
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden; }
+  .page .smaller {
+    max-width: 760px; }
+
+.page-large {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden; }
+
+.page-small {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow: hidden; }
+
+@media only screen and (min-width: 767px) and (max-width: 959px) {
+  .page, .page-large, .page-small {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; } }
+
+@media only screen and (min-width: 360px) and (max-width: 766px) {
+  .page, .page-large, .page-small {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; }
+    .page .smaller, .page-large .smaller, .page-small .smaller {
+      max-width: 100%; } }
+
+@media only screen and (max-width: 359px) {
+  .page, .page-large, .page-small {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    .page .smaller, .page-large .smaller, .page-small .smaller {
+      max-width: 100%; } }
+
+.hidden {
+  display: none; }
+
+a {
+  color: #011D49;
+  text-decoration: underline; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+*:focus {
+  outline: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+body, input, textarea, select, * {
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+select::-ms-expand {
+  display: none; }
+
+.field-validation-error, .validation-plus, .no-change {
+  color: #ed1c24;
+  display: block;
+  margin-top: 0.5rem;
+  float: left;
+  width: 100%; }
+  .field-validation-error.hidden, .validation-plus.hidden, .no-change.hidden {
+    display: none; }
+
+.field-validation-error ~ .validation-plus {
+  display: none !important; }
+
+#card-number, #expiration-date, #cvv {
+  border: 2px solid #767676;
+  border-radius: 4px;
+  padding: 0.4rem 0.5rem;
+  height: 43px;
+  float: left; }
+
+#cvv {
+  float: left; }
+  #cvv ~ a {
+    float: left;
+    margin-left: 1rem;
+    width: calc(40px - 1rem);
+    height: calc(40px - 1rem);
+    background-color: #767676;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 9px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none; }
+    #cvv ~ a span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding-top: 4px; }
+    #cvv ~ a .content {
+      opacity: 0;
+      visibility: hidden;
+      transition: ease 0.3s opacity, ease 0.3s visibility;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999999;
+      background-color: rgba(0, 0, 0, 0.3); }
+      #cvv ~ a .content .inner {
+        max-width: 475px;
+        display: block;
+        margin: 0 auto;
+        background: white;
+        padding: 2rem;
+        cursor: default; }
+        #cvv ~ a .content .inner * {
+          color: black; }
+        #cvv ~ a .content .inner p {
+          font-weight: 500; }
+        #cvv ~ a .content .inner div {
+          margin-top: 1.5rem;
+          background: #011D49;
+          display: table;
+          padding: 0.9rem 1.5rem 0.75rem;
+          text-transform: uppercase;
+          color: white;
+          cursor: pointer; }
+    #cvv ~ a.active .content {
+      opacity: 1;
+      visibility: visible; }
+
+#paymentDetails #ccDetails .form-group:before, #paymentDetails #ccDetails .form-group:after {
+  content: "";
+  display: table; }
+
+#paymentDetails #ccDetails .form-group:after {
+  clear: both; }
+
+#paymentDetails #ccDetails .form-group + .form-group {
+  margin-top: 1rem; }
+
+#paymentDetails #ccDetails .form-group label {
+  font-weight: 600; }
+
+#paymentDetails #ccDetails .form-group .acceptedCards {
+  float: right;
+  width: 50%;
+  padding-left: 3rem;
+  height: 42px;
+  display: flex;
+  align-items: center; }
+  #paymentDetails #ccDetails .form-group .acceptedCards p {
+    font-weight: 400;
+    margin-right: 0.75rem; }
+  #paymentDetails #ccDetails .form-group .acceptedCards img {
+    float: left;
+    width: 40px; }
+    #paymentDetails #ccDetails .form-group .acceptedCards img + img {
+      margin-left: 0.5rem; }
+
+#paymentDetails #ccDetails .form-group #card-number {
+  float: left;
+  width: 50%;
+  padding-right: 0.75rem; }
+  #paymentDetails #ccDetails .form-group #card-number #ccAddon {
+    position: absolute;
+    right: 40px;
+    top: 8px; }
+
+.acceptedCards:before, .acceptedCards:after {
+  content: "";
+  display: table; }
+
+.acceptedCards:after {
+  clear: both; }
+
+.acceptedCards p {
+  float: left; }
+
+input[type="submit"].smaller, button.smaller {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 300; }
+
+input[type="submit"], button {
+  padding: 1.25rem 1rem;
+  background-color: #F5F5F5;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.25rem;
+  font-weight: 700; }
+  input[type="submit"]:hover, button:hover {
+    background-color: #cfcfcf;
+    color: black; }
+  input[type="submit"]:focus, input[type="submit"].active, button:focus, button.active {
+    background-color: #011D49;
+    color: white; }
+
+label.checkbox {
+  font-weight: 500;
+  font-size: 1.1rem; }
+  label.checkbox:before, label.checkbox:after {
+    content: "";
+    display: table; }
+  label.checkbox:after {
+    clear: both; }
+  label.checkbox input {
+    display: none; }
+    label.checkbox input:checked {
+      opacity: 0.5; }
+      label.checkbox input:checked ~ span::before {
+        opacity: 1; }
+  label.checkbox span {
+    width: 1.875rem;
+    height: 1.875rem;
+    border: 2px solid #767676;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    float: left;
+    margin-right: 1rem; }
+    label.checkbox span::before {
+      content: "¬";
+      transform: rotate(132deg);
+      display: block;
+      font-size: 36px;
+      width: 0px;
+      height: 0px;
+      color: #011D49;
+      position: relative;
+      top: 26px;
+      left: 44px;
+      opacity: 0;
+      border-radius: 4px; }
+  label.checkbox p {
+    float: left;
+    width: calc(100% - 2.875rem);
+    padding-top: 0.4rem;
+    font-weight: 400; }
+
+.input-area:before, .input-area:after {
+  content: "";
+  display: table; }
+
+.input-area:after {
+  clear: both; }
+
+label.radio {
+  float: left;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative; }
+  label.radio:before, label.radio:after {
+    content: "";
+    display: table; }
+  label.radio:after {
+    clear: both; }
+  label.radio + label.radio {
+    margin-top: 1rem; }
+  label.radio input {
+    position: absolute;
+    display: none; }
+    label.radio input:checked ~ span::before {
+      opacity: 1; }
+  label.radio span {
+    display: block;
+    border: 2px solid #767676;
+    width: 1.875rem;
+    height: 1.875rem;
+    float: left;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    label.radio span::before {
+      width: 20px;
+      height: 20px;
+      display: block;
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      background-color: #011D49;
+      border-radius: 50%;
+      opacity: 0; }
+    @media only screen and (max-width: 359px) {
+      label.radio span::before {
+        top: 5px;
+        left: 5px; } }
+  label.radio p {
+    float: left;
+    width: calc(100% - 2.875rem);
+    height: 1.875rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem;
+    padding-top: 0.3rem; }
+
+input {
+  border: 2px solid #767676;
+  border-radius: 4px;
+  padding: 0.6rem 2rem 0.6rem 0.5rem;
+  line-height: 1.5;
+  font-size: 1.1rem; }
+
+input, select, textarea {
+  max-width: 100%;
+  width: 100%; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input.valid,
+#card-number.card-valid,
+#cvv.card-valid,
+#expiration-date.card-valid,
+select.valid {
+  border-color: #51A33D;
+  background-color: rgba(81, 163, 61, 0.075); }
+
+input.input-validation-error-override {
+  border-color: #DC3452 !important;
+  background-color: rgba(220, 52, 82, 0.075) !important; }
+
+#card-number.card-valid,
+#cvv.card-valid,
+#expiration-date.card-valid {
+  position: relative; }
+  #card-number.card-valid::before, #card-number.card-valid::after,
+  #cvv.card-valid::before,
+  #cvv.card-valid::after,
+  #expiration-date.card-valid::before,
+  #expiration-date.card-valid::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 4px;
+    background: #51A33D; }
+  #card-number.card-valid::before,
+  #cvv.card-valid::before,
+  #expiration-date.card-valid::before {
+    transform: rotate(-45deg);
+    right: 10px;
+    width: 15px;
+    top: 17px; }
+  #card-number.card-valid::after,
+  #cvv.card-valid::after,
+  #expiration-date.card-valid::after {
+    width: 8px;
+    right: 20px;
+    transform: rotate(45deg);
+    top: 19px; }
+
+input.input-validation-error,
+#card-number.card-validation-error,
+#cvv.card-validation-error,
+#expiration-date.card-validation-error,
+select.input-validation-error {
+  border-color: #DC3452;
+  background-color: rgba(220, 52, 82, 0.075); }
+
+.validation-box {
+  position: relative;
+  display: block;
+  float: left;
+  clear: both; }
+  .validation-box input.input-validation-error-override ~ .validation-icon::before, .validation-box input.input-validation-error-override ~ .validation-icon::after {
+    content: "" !important;
+    position: absolute !important;
+    display: block !important;
+    height: 4px !important;
+    width: 15px !important;
+    background: #DC3452 !important;
+    top: 8px !important;
+    right: 0 !important; }
+  .validation-box input.input-validation-error-override ~ .validation-icon::before {
+    transform: rotate(-45deg) !important; }
+  .validation-box input.input-validation-error-override ~ .validation-icon::after {
+    transform: rotate(45deg) !important; }
+  .validation-box input.input-validation-error ~ .validation-icon::before, .validation-box input.input-validation-error ~ .validation-icon::after,
+  .validation-box textarea.input-validation-error ~ .validation-icon::before,
+  .validation-box textarea.input-validation-error ~ .validation-icon::after,
+  .validation-box select.input-validation-error ~ .validation-icon::before,
+  .validation-box select.input-validation-error ~ .validation-icon::after,
+  .validation-box input.input-validation-error.valid ~ .validation-icon::before,
+  .validation-box input.input-validation-error.valid ~ .validation-icon::after,
+  .validation-box textarea.input-validation-error.valid ~ .validation-icon::before,
+  .validation-box textarea.input-validation-error.valid ~ .validation-icon::after,
+  .validation-box select.input-validation-error.valid ~ .validation-icon::before,
+  .validation-box select.input-validation-error.valid ~ .validation-icon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 15px;
+    background: #DC3452;
+    top: 8px;
+    right: 0; }
+  .validation-box input.input-validation-error ~ .validation-icon::before,
+  .validation-box textarea.input-validation-error ~ .validation-icon::before,
+  .validation-box select.input-validation-error ~ .validation-icon::before,
+  .validation-box input.input-validation-error.valid ~ .validation-icon::before,
+  .validation-box textarea.input-validation-error.valid ~ .validation-icon::before,
+  .validation-box select.input-validation-error.valid ~ .validation-icon::before {
+    transform: rotate(-45deg); }
+  .validation-box input.input-validation-error ~ .validation-icon::after,
+  .validation-box textarea.input-validation-error ~ .validation-icon::after,
+  .validation-box select.input-validation-error ~ .validation-icon::after,
+  .validation-box input.input-validation-error.valid ~ .validation-icon::after,
+  .validation-box textarea.input-validation-error.valid ~ .validation-icon::after,
+  .validation-box select.input-validation-error.valid ~ .validation-icon::after {
+    transform: rotate(45deg); }
+  .validation-box input.valid ~ .validation-icon::before, .validation-box input.valid ~ .validation-icon::after, .validation-box textarea.valid ~ .validation-icon::before, .validation-box textarea.valid ~ .validation-icon::after, .validation-box select.valid ~ .validation-icon::before, .validation-box select.valid ~ .validation-icon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 4px;
+    background: #51A33D; }
+  .validation-box input.valid ~ .validation-icon::before, .validation-box textarea.valid ~ .validation-icon::before, .validation-box select.valid ~ .validation-icon::before {
+    transform: rotate(-45deg);
+    right: 0;
+    width: 15px;
+    top: 7px; }
+  .validation-box input.valid ~ .validation-icon::after, .validation-box textarea.valid ~ .validation-icon::after, .validation-box select.valid ~ .validation-icon::after {
+    width: 8px;
+    right: 10px;
+    transform: rotate(45deg);
+    top: 10px; }
+  .validation-box select.valid {
+    background-size: 0px; }
+  .validation-box .validation-icon {
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    display: block; }
+
+#card-number.card-validation-error,
+#cvv.card-validation-error,
+#expiration-date.card-validation-error {
+  position: relative; }
+  #card-number.card-validation-error::before, #card-number.card-validation-error::after,
+  #cvv.card-validation-error::before,
+  #cvv.card-validation-error::after,
+  #expiration-date.card-validation-error::before,
+  #expiration-date.card-validation-error::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 15px;
+    background: #DC3452;
+    top: 17px;
+    right: 10px; }
+  #card-number.card-validation-error::before,
+  #cvv.card-validation-error::before,
+  #expiration-date.card-validation-error::before {
+    transform: rotate(-45deg); }
+  #card-number.card-validation-error::after,
+  #cvv.card-validation-error::after,
+  #expiration-date.card-validation-error::after {
+    transform: rotate(45deg); }
+
+@media only screen and (max-width: 766px) {
+  #paymentDetails #ccDetails .form-group-cc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    float: left;
+    width: 100%; }
+    #paymentDetails #ccDetails .form-group-cc label {
+      order: 0; }
+    #paymentDetails #ccDetails .form-group-cc #card-number {
+      order: 1;
+      width: 270px; }
+      #paymentDetails #ccDetails .form-group-cc #card-number #ccAddon {
+        position: absolute;
+        right: 40px;
+        top: 8px; }
+    #paymentDetails #ccDetails .form-group-cc span.field-validation-error {
+      order: 2; }
+    #paymentDetails #ccDetails .form-group-cc .acceptedCards {
+      order: 3;
+      padding-left: 0;
+      width: 100%; } }
+
+select {
+  border: 2px solid #767676;
+  border-radius: 4px;
+  padding: 0.6rem 2.5rem 0.6rem 0.5rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../images/dropdown-arrow.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.5rem) 50%;
+  background-size: 15px;
+  width: 100%; }
+  select option {
+    padding: 5px !important; }
+
+.fieldHelp {
+  margin-top: 0.5rem;
+  display: block;
+  float: left;
+  width: 100%; }
+
+.form-item {
+  float: left;
+  clear: both; }
+  .form-item + .form-item {
+    margin-top: 1.25rem; }
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  float: left;
+  width: 100%; }
+  label span {
+    color: #ed1c24;
+    font-weight: 600; }
+
+#paymentMethodSelector {
+  /* old styling - hardcoded button */
+  /*  #btnGooglePay {
+        background-color: black;
+        color: white;
+        border-radius: 4px;
+        padding: 1rem 1.5rem;
+        font-weight: 300;
+
+        img {
+            display: inline-block;
+            width: 1.1rem;
+            position: relative;
+            top: 2px;
+            margin: 0 2px;
+        }
+    }*/ }
+  #paymentMethodSelector #btnPP {
+    background-color: #009cde;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px; }
+    #paymentMethodSelector #btnPP img.small {
+      margin-right: 0.5rem;
+      height: 1.1rem; }
+    #paymentMethodSelector #btnPP img.large {
+      height: 1.3rem; }
+  #paymentMethodSelector #btnGooglePay button.gpay-button {
+    width: 160px; }
+  @media only screen and (max-width: 766px) {
+    #paymentMethodSelector #btnGooglePay button.gpay-button {
+      width: 100%; } }
+  #paymentMethodSelector #btnApplePay {
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    font-weight: 300; }
+    #paymentMethodSelector #btnApplePay img {
+      display: inline-block;
+      width: 1.1rem;
+      position: relative;
+      top: 2px;
+      margin: 0 2px; }
+  #paymentMethodSelector #btnCC {
+    background-color: #011D49;
+    color: white;
+    position: relative;
+    padding: 1rem 1.5rem;
+    font-weight: 600; }
+    #paymentMethodSelector #btnCC img {
+      display: inline-block;
+      width: 1.7rem;
+      margin-right: 1rem;
+      position: relative;
+      top: 2px; }
+
+.payment-btns {
+  margin-top: 1.5rem; }
+  .payment-btns:before, .payment-btns:after {
+    content: "";
+    display: table; }
+  .payment-btns:after {
+    clear: both; }
+  .payment-btns button:not(.hidden) {
+    float: left; }
+  .payment-btns button {
+    margin-right: 1.5rem;
+    margin-bottom: 10px;
+    height: 53px; }
+
+.buttonBar {
+  margin-bottom: 3.5rem; }
+  .buttonBar #btnSubmit, .buttonBar #btnContactPreferencesSubmit {
+    background-color: #ff8e00;
+    text-transform: uppercase;
+    padding: 1.25rem 4.4rem 1.25rem 1.5rem;
+    font-weight: 600;
+    position: relative;
+    text-align: left; }
+    .buttonBar #btnSubmit:before, .buttonBar #btnSubmit:after, .buttonBar #btnContactPreferencesSubmit:before, .buttonBar #btnContactPreferencesSubmit:after {
+      content: "";
+      display: table; }
+    .buttonBar #btnSubmit:after, .buttonBar #btnContactPreferencesSubmit:after {
+      clear: both; }
+    .buttonBar #btnSubmit img, .buttonBar #btnContactPreferencesSubmit img {
+      width: 1.4rem;
+      position: absolute;
+      top: calc(50% - 8px);
+      right: 1.5rem; }
+
+#expiration-date {
+  width: 115px; }
+
+#cvv {
+  width: 80px; }
+
+@media only screen and (max-width: 766px) {
+  .buttonBar {
+    margin-bottom: 1.5rem; } }
+
+@media only screen and (max-width: 359px) {
+  label.radio span {
+    position: static; }
+  label.radio p {
+    padding-left: 0.75rem;
+    min-height: 1.875rem;
+    height: auto; } }
+
+.ErrorMessage .page {
+  background-color: rgba(220, 52, 82, 0.3);
+  border: 2px solid #DC3452;
+  padding: 2rem; }
+
+.ErrorMessage ul {
+  padding-left: 1.5rem;
+  margin-top: 1rem; }
+  .ErrorMessage ul li {
+    line-height: 1.5;
+    font-size: 1.1rem;
+    list-style-type: disc; }
+    .ErrorMessage ul li + li {
+      margin-top: 0.25rem; }
+
+form #giftAddressAutoEntry {
+  height: auto; }
+  form #giftAddressAutoEntry.hidden {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden; }
+
+.requiredMessage {
+  margin-bottom: 1.6875rem;
+  font-weight: 500; }
+  .requiredMessage span {
+    color: #DC3452; }
+
+#frmSingleDonationFormForm, #frmRegularDonationFormForm, #contactPreferences, .caption-box {
+  /*Type-ahead*/ }
+  #frmSingleDonationFormForm h1, #frmRegularDonationFormForm h1, #contactPreferences h1, .caption-box h1 {
+    margin-bottom: 1rem; }
+  #frmSingleDonationFormForm #currencyPercentage, #frmRegularDonationFormForm #currencyPercentage, #contactPreferences #currencyPercentage, .caption-box #currencyPercentage {
+    font-weight: 400; }
+  #frmSingleDonationFormForm .donation-message, #frmRegularDonationFormForm .donation-message, #contactPreferences .donation-message, .caption-box .donation-message {
+    text-transform: none;
+    font-weight: 700; }
+    #frmSingleDonationFormForm .donation-message span, #frmRegularDonationFormForm .donation-message span, #contactPreferences .donation-message span, .caption-box .donation-message span {
+      color: #DC3452;
+      font-weight: 800; }
+  #frmSingleDonationFormForm #donationAmount:before, #frmSingleDonationFormForm #donationAmount:after, #frmRegularDonationFormForm #donationAmount:before, #frmRegularDonationFormForm #donationAmount:after, #contactPreferences #donationAmount:before, #contactPreferences #donationAmount:after, .caption-box #donationAmount:before, .caption-box #donationAmount:after {
+    content: "";
+    display: table; }
+  #frmSingleDonationFormForm #donationAmount:after, #frmRegularDonationFormForm #donationAmount:after, #contactPreferences #donationAmount:after, .caption-box #donationAmount:after {
+    clear: both; }
+  #frmSingleDonationFormForm #donationAmount .input-area, #frmRegularDonationFormForm #donationAmount .input-area, #contactPreferences #donationAmount .input-area, .caption-box #donationAmount .input-area {
+    display: none;
+    margin-top: 1.625rem; }
+    #frmSingleDonationFormForm #donationAmount .input-area.active, #frmRegularDonationFormForm #donationAmount .input-area.active, #contactPreferences #donationAmount .input-area.active, .caption-box #donationAmount .input-area.active {
+      display: block; }
+    #frmSingleDonationFormForm #donationAmount .input-area label, #frmRegularDonationFormForm #donationAmount .input-area label, #contactPreferences #donationAmount .input-area label, .caption-box #donationAmount .input-area label {
+      font-size: 1.375rem;
+      line-height: 1.375rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.5rem; }
+    #frmSingleDonationFormForm #donationAmount .input-area input, #frmRegularDonationFormForm #donationAmount .input-area input, #contactPreferences #donationAmount .input-area input, .caption-box #donationAmount .input-area input {
+      width: 100%;
+      max-width: 200px; }
+  #frmSingleDonationFormForm #donationType p.intro, #frmSingleDonationFormForm #donationSource p.intro, #frmSingleDonationFormForm #fundraising p.intro, #frmSingleDonationFormForm #companyorganisation p.intro, #frmSingleDonationFormForm #myDetails p.intro, #frmSingleDonationFormForm #pnlAddress p.intro, #frmSingleDonationFormForm #recipientAddress p.intro, #frmSingleDonationFormForm #donationGift p.intro, #frmRegularDonationFormForm #donationType p.intro, #frmRegularDonationFormForm #donationSource p.intro, #frmRegularDonationFormForm #fundraising p.intro, #frmRegularDonationFormForm #companyorganisation p.intro, #frmRegularDonationFormForm #myDetails p.intro, #frmRegularDonationFormForm #pnlAddress p.intro, #frmRegularDonationFormForm #recipientAddress p.intro, #frmRegularDonationFormForm #donationGift p.intro, #contactPreferences #donationType p.intro, #contactPreferences #donationSource p.intro, #contactPreferences #fundraising p.intro, #contactPreferences #companyorganisation p.intro, #contactPreferences #myDetails p.intro, #contactPreferences #pnlAddress p.intro, #contactPreferences #recipientAddress p.intro, #contactPreferences #donationGift p.intro, .caption-box #donationType p.intro, .caption-box #donationSource p.intro, .caption-box #fundraising p.intro, .caption-box #companyorganisation p.intro, .caption-box #myDetails p.intro, .caption-box #pnlAddress p.intro, .caption-box #recipientAddress p.intro, .caption-box #donationGift p.intro {
+    margin-bottom: 1rem; }
+  #frmSingleDonationFormForm #giftAid label, #frmRegularDonationFormForm #giftAid label, #contactPreferences #giftAid label, .caption-box #giftAid label {
+    cursor: pointer; }
+  #frmSingleDonationFormForm #myDetails .smaller, #frmSingleDonationFormForm #giftDetails .smaller, #frmRegularDonationFormForm #myDetails .smaller, #frmRegularDonationFormForm #giftDetails .smaller, #contactPreferences #myDetails .smaller, #contactPreferences #giftDetails .smaller, .caption-box #myDetails .smaller, .caption-box #giftDetails .smaller {
+    max-width: 550px; }
+    #frmSingleDonationFormForm #myDetails .smaller .input-area .form-item, #frmSingleDonationFormForm #giftDetails .smaller .input-area .form-item, #frmRegularDonationFormForm #myDetails .smaller .input-area .form-item, #frmRegularDonationFormForm #giftDetails .smaller .input-area .form-item, #contactPreferences #myDetails .smaller .input-area .form-item, #contactPreferences #giftDetails .smaller .input-area .form-item, .caption-box #myDetails .smaller .input-area .form-item, .caption-box #giftDetails .smaller .input-area .form-item {
+      width: 250px;
+      clear: none; }
+      #frmSingleDonationFormForm #myDetails .smaller .input-area .form-item .validation-box, #frmSingleDonationFormForm #giftDetails .smaller .input-area .form-item .validation-box, #frmRegularDonationFormForm #myDetails .smaller .input-area .form-item .validation-box, #frmRegularDonationFormForm #giftDetails .smaller .input-area .form-item .validation-box, #contactPreferences #myDetails .smaller .input-area .form-item .validation-box, #contactPreferences #giftDetails .smaller .input-area .form-item .validation-box, .caption-box #myDetails .smaller .input-area .form-item .validation-box, .caption-box #giftDetails .smaller .input-area .form-item .validation-box {
+        width: 100%; }
+  #frmSingleDonationFormForm #myDetails .input-area .form-item, #frmSingleDonationFormForm #giftDetails .input-area .form-item, #frmRegularDonationFormForm #myDetails .input-area .form-item, #frmRegularDonationFormForm #giftDetails .input-area .form-item, #contactPreferences #myDetails .input-area .form-item, #contactPreferences #giftDetails .input-area .form-item, .caption-box #myDetails .input-area .form-item, .caption-box #giftDetails .input-area .form-item {
+    float: left;
+    width: calc(50% - 0.75rem);
+    clear: unset; }
+    #frmSingleDonationFormForm #myDetails .input-area .form-item + .form-item, #frmSingleDonationFormForm #giftDetails .input-area .form-item + .form-item, #frmRegularDonationFormForm #myDetails .input-area .form-item + .form-item, #frmRegularDonationFormForm #giftDetails .input-area .form-item + .form-item, #contactPreferences #myDetails .input-area .form-item + .form-item, #contactPreferences #giftDetails .input-area .form-item + .form-item, .caption-box #myDetails .input-area .form-item + .form-item, .caption-box #giftDetails .input-area .form-item + .form-item {
+      margin-top: 0; }
+    #frmSingleDonationFormForm #myDetails .input-area .form-item:nth-child(even), #frmSingleDonationFormForm #giftDetails .input-area .form-item:nth-child(even), #frmRegularDonationFormForm #myDetails .input-area .form-item:nth-child(even), #frmRegularDonationFormForm #giftDetails .input-area .form-item:nth-child(even), #contactPreferences #myDetails .input-area .form-item:nth-child(even), #contactPreferences #giftDetails .input-area .form-item:nth-child(even), .caption-box #myDetails .input-area .form-item:nth-child(even), .caption-box #giftDetails .input-area .form-item:nth-child(even) {
+      margin-right: 0;
+      margin-left: 1.5rem; }
+    #frmSingleDonationFormForm #myDetails .input-area .form-item:last-child, #frmSingleDonationFormForm #giftDetails .input-area .form-item:last-child, #frmRegularDonationFormForm #myDetails .input-area .form-item:last-child, #frmRegularDonationFormForm #giftDetails .input-area .form-item:last-child, #contactPreferences #myDetails .input-area .form-item:last-child, #contactPreferences #giftDetails .input-area .form-item:last-child, .caption-box #myDetails .input-area .form-item:last-child, .caption-box #giftDetails .input-area .form-item:last-child {
+      margin-top: 1.25rem;
+      width: 75%; }
+      #frmSingleDonationFormForm #myDetails .input-area .form-item:last-child input, #frmSingleDonationFormForm #giftDetails .input-area .form-item:last-child input, #frmRegularDonationFormForm #myDetails .input-area .form-item:last-child input, #frmRegularDonationFormForm #giftDetails .input-area .form-item:last-child input, #contactPreferences #myDetails .input-area .form-item:last-child input, #contactPreferences #giftDetails .input-area .form-item:last-child input, .caption-box #myDetails .input-area .form-item:last-child input, .caption-box #giftDetails .input-area .form-item:last-child input {
+        max-width: 100%;
+        width: 100%; }
+  #frmSingleDonationFormForm #donationType .expand-content, #frmSingleDonationFormForm #donationSource .expand-content, #frmSingleDonationFormForm #donationGift .expand-content, #frmRegularDonationFormForm #donationType .expand-content, #frmRegularDonationFormForm #donationSource .expand-content, #frmRegularDonationFormForm #donationGift .expand-content, #contactPreferences #donationType .expand-content, #contactPreferences #donationSource .expand-content, #contactPreferences #donationGift .expand-content, .caption-box #donationType .expand-content, .caption-box #donationSource .expand-content, .caption-box #donationGift .expand-content {
+    float: left;
+    width: 100%; }
+    #frmSingleDonationFormForm #donationType .expand-content fieldset, #frmSingleDonationFormForm #donationSource .expand-content fieldset, #frmSingleDonationFormForm #donationGift .expand-content fieldset, #frmRegularDonationFormForm #donationType .expand-content fieldset, #frmRegularDonationFormForm #donationSource .expand-content fieldset, #frmRegularDonationFormForm #donationGift .expand-content fieldset, #contactPreferences #donationType .expand-content fieldset, #contactPreferences #donationSource .expand-content fieldset, #contactPreferences #donationGift .expand-content fieldset, .caption-box #donationType .expand-content fieldset, .caption-box #donationSource .expand-content fieldset, .caption-box #donationGift .expand-content fieldset {
+      margin-top: 2rem; }
+    #frmSingleDonationFormForm #donationType .expand-content.no-pad fieldset, #frmSingleDonationFormForm #donationSource .expand-content.no-pad fieldset, #frmSingleDonationFormForm #donationGift .expand-content.no-pad fieldset, #frmRegularDonationFormForm #donationType .expand-content.no-pad fieldset, #frmRegularDonationFormForm #donationSource .expand-content.no-pad fieldset, #frmRegularDonationFormForm #donationGift .expand-content.no-pad fieldset, #contactPreferences #donationType .expand-content.no-pad fieldset, #contactPreferences #donationSource .expand-content.no-pad fieldset, #contactPreferences #donationGift .expand-content.no-pad fieldset, .caption-box #donationType .expand-content.no-pad fieldset, .caption-box #donationSource .expand-content.no-pad fieldset, .caption-box #donationGift .expand-content.no-pad fieldset {
+      margin-top: 0; }
+  #frmSingleDonationFormForm #coverFees .cover-fees, #frmRegularDonationFormForm #coverFees .cover-fees, #contactPreferences #coverFees .cover-fees, .caption-box #coverFees .cover-fees {
+    float: left;
+    width: 100%;
+    margin-top: 1.5rem; }
+    #frmSingleDonationFormForm #coverFees .cover-fees p, #frmRegularDonationFormForm #coverFees .cover-fees p, #contactPreferences #coverFees .cover-fees p, .caption-box #coverFees .cover-fees p {
+      color: #767676;
+      margin-bottom: 1.5rem; }
+    #frmSingleDonationFormForm #coverFees .cover-fees label, #frmRegularDonationFormForm #coverFees .cover-fees label, #contactPreferences #coverFees .cover-fees label, .caption-box #coverFees .cover-fees label {
+      background-color: #F5F5F5;
+      float: left;
+      width: 100%;
+      padding: 1.25rem; }
+      #frmSingleDonationFormForm #coverFees .cover-fees label:before, #frmSingleDonationFormForm #coverFees .cover-fees label:after, #frmRegularDonationFormForm #coverFees .cover-fees label:before, #frmRegularDonationFormForm #coverFees .cover-fees label:after, #contactPreferences #coverFees .cover-fees label:before, #contactPreferences #coverFees .cover-fees label:after, .caption-box #coverFees .cover-fees label:before, .caption-box #coverFees .cover-fees label:after {
+        content: "";
+        display: table; }
+      #frmSingleDonationFormForm #coverFees .cover-fees label:after, #frmRegularDonationFormForm #coverFees .cover-fees label:after, #contactPreferences #coverFees .cover-fees label:after, .caption-box #coverFees .cover-fees label:after {
+        clear: both; }
+      #frmSingleDonationFormForm #coverFees .cover-fees label p, #frmRegularDonationFormForm #coverFees .cover-fees label p, #contactPreferences #coverFees .cover-fees label p, .caption-box #coverFees .cover-fees label p {
+        margin-bottom: 0;
+        padding-top: 0;
+        color: black; }
+  #frmSingleDonationFormForm #donationSource .cover-fees, #frmRegularDonationFormForm #donationSource .cover-fees, #contactPreferences #donationSource .cover-fees, .caption-box #donationSource .cover-fees {
+    margin-top: 1.5rem; }
+  #frmSingleDonationFormForm .text-area, #frmRegularDonationFormForm .text-area, #contactPreferences .text-area, .caption-box .text-area {
+    float: left;
+    width: 60%;
+    padding-right: 1rem; }
+    #frmSingleDonationFormForm .text-area:before, #frmSingleDonationFormForm .text-area:after, #frmRegularDonationFormForm .text-area:before, #frmRegularDonationFormForm .text-area:after, #contactPreferences .text-area:before, #contactPreferences .text-area:after, .caption-box .text-area:before, .caption-box .text-area:after {
+      content: "";
+      display: table; }
+    #frmSingleDonationFormForm .text-area:after, #frmRegularDonationFormForm .text-area:after, #contactPreferences .text-area:after, .caption-box .text-area:after {
+      clear: both; }
+    #frmSingleDonationFormForm .text-area .preset-values, #frmRegularDonationFormForm .text-area .preset-values, #contactPreferences .text-area .preset-values, .caption-box .text-area .preset-values {
+      margin-top: 1.0625rem;
+      margin-bottom: 2.25rem; }
+      #frmSingleDonationFormForm .text-area .preset-values:before, #frmSingleDonationFormForm .text-area .preset-values:after, #frmRegularDonationFormForm .text-area .preset-values:before, #frmRegularDonationFormForm .text-area .preset-values:after, #contactPreferences .text-area .preset-values:before, #contactPreferences .text-area .preset-values:after, .caption-box .text-area .preset-values:before, .caption-box .text-area .preset-values:after {
+        content: "";
+        display: table; }
+      #frmSingleDonationFormForm .text-area .preset-values:after, #frmRegularDonationFormForm .text-area .preset-values:after, #contactPreferences .text-area .preset-values:after, .caption-box .text-area .preset-values:after {
+        clear: both; }
+      #frmSingleDonationFormForm .text-area .preset-values button, #frmRegularDonationFormForm .text-area .preset-values button, #contactPreferences .text-area .preset-values button, .caption-box .text-area .preset-values button {
+        float: left;
+        width: calc(25% - 0.75rem);
+        margin-right: 1rem;
+        text-transform: uppercase; }
+        #frmSingleDonationFormForm .text-area .preset-values button:last-child, #frmRegularDonationFormForm .text-area .preset-values button:last-child, #contactPreferences .text-area .preset-values button:last-child, .caption-box .text-area .preset-values button:last-child {
+          margin-right: 0; }
+  #frmSingleDonationFormForm .image, #frmRegularDonationFormForm .image, #contactPreferences .image, .caption-box .image {
+    float: left;
+    width: 40%;
+    padding-left: 1rem; }
+    #frmSingleDonationFormForm .image .items:before, #frmSingleDonationFormForm .image .items:after, #frmRegularDonationFormForm .image .items:before, #frmRegularDonationFormForm .image .items:after, #contactPreferences .image .items:before, #contactPreferences .image .items:after, .caption-box .image .items:before, .caption-box .image .items:after {
+      content: "";
+      display: table; }
+    #frmSingleDonationFormForm .image .items:after, #frmRegularDonationFormForm .image .items:after, #contactPreferences .image .items:after, .caption-box .image .items:after {
+      clear: both; }
+    #frmSingleDonationFormForm .image .items .item, #frmRegularDonationFormForm .image .items .item, #contactPreferences .image .items .item, .caption-box .image .items .item {
+      display: block; }
+      #frmSingleDonationFormForm .image .items .item img, #frmRegularDonationFormForm .image .items .item img, #contactPreferences .image .items .item img, .caption-box .image .items .item img {
+        margin-bottom: 1.3125rem; }
+      #frmSingleDonationFormForm .image .items .item p, #frmRegularDonationFormForm .image .items .item p, #contactPreferences .image .items .item p, .caption-box .image .items .item p {
+        font-size: 1.125rem; }
+  #frmSingleDonationFormForm .other-type, #frmRegularDonationFormForm .other-type, #contactPreferences .other-type, .caption-box .other-type {
+    font-size: 1.125rem; }
+  #frmSingleDonationFormForm #recipientAddress, #frmRegularDonationFormForm #recipientAddress, #contactPreferences #recipientAddress, .caption-box #recipientAddress {
+    margin-top: 2rem; }
+  #frmSingleDonationFormForm .gift-message, #frmRegularDonationFormForm .gift-message, #contactPreferences .gift-message, .caption-box .gift-message {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-top: 1rem; }
+  #frmSingleDonationFormForm .gift-message p, #frmRegularDonationFormForm .gift-message p, #contactPreferences .gift-message p, .caption-box .gift-message p {
+    font-size: 0.95rem;
+    color: #767676; }
+  #frmSingleDonationFormForm #recipientAddress input, #frmSingleDonationFormForm #recipientAddress select, #frmSingleDonationFormForm #pnlAddress input, #frmSingleDonationFormForm #pnlAddress select, #frmSingleDonationFormForm #donationType input, #frmSingleDonationFormForm #donationType select, #frmSingleDonationFormForm #fundraising input, #frmSingleDonationFormForm #fundraising select, #frmSingleDonationFormForm #companyorganisation input, #frmSingleDonationFormForm #companyorganisation select, #frmSingleDonationFormForm #inMem input, #frmSingleDonationFormForm #inMem select, #frmSingleDonationFormForm #contactPreferences input, #frmSingleDonationFormForm #contactPreferences select, #frmSingleDonationFormForm #directDebitDetails input, #frmSingleDonationFormForm #directDebitDetails select, #frmSingleDonationFormForm #ajaxKeepInTouchForm input, #frmSingleDonationFormForm #ajaxKeepInTouchForm select, #frmRegularDonationFormForm #recipientAddress input, #frmRegularDonationFormForm #recipientAddress select, #frmRegularDonationFormForm #pnlAddress input, #frmRegularDonationFormForm #pnlAddress select, #frmRegularDonationFormForm #donationType input, #frmRegularDonationFormForm #donationType select, #frmRegularDonationFormForm #fundraising input, #frmRegularDonationFormForm #fundraising select, #frmRegularDonationFormForm #companyorganisation input, #frmRegularDonationFormForm #companyorganisation select, #frmRegularDonationFormForm #inMem input, #frmRegularDonationFormForm #inMem select, #frmRegularDonationFormForm #contactPreferences input, #frmRegularDonationFormForm #contactPreferences select, #frmRegularDonationFormForm #directDebitDetails input, #frmRegularDonationFormForm #directDebitDetails select, #frmRegularDonationFormForm #ajaxKeepInTouchForm input, #frmRegularDonationFormForm #ajaxKeepInTouchForm select, #contactPreferences #recipientAddress input, #contactPreferences #recipientAddress select, #contactPreferences #pnlAddress input, #contactPreferences #pnlAddress select, #contactPreferences #donationType input, #contactPreferences #donationType select, #contactPreferences #fundraising input, #contactPreferences #fundraising select, #contactPreferences #companyorganisation input, #contactPreferences #companyorganisation select, #contactPreferences #inMem input, #contactPreferences #inMem select, #contactPreferences #contactPreferences input, #contactPreferences #contactPreferences select, #contactPreferences #directDebitDetails input, #contactPreferences #directDebitDetails select, #contactPreferences #ajaxKeepInTouchForm input, #contactPreferences #ajaxKeepInTouchForm select, .caption-box #recipientAddress input, .caption-box #recipientAddress select, .caption-box #pnlAddress input, .caption-box #pnlAddress select, .caption-box #donationType input, .caption-box #donationType select, .caption-box #fundraising input, .caption-box #fundraising select, .caption-box #companyorganisation input, .caption-box #companyorganisation select, .caption-box #inMem input, .caption-box #inMem select, .caption-box #contactPreferences input, .caption-box #contactPreferences select, .caption-box #directDebitDetails input, .caption-box #directDebitDetails select, .caption-box #ajaxKeepInTouchForm input, .caption-box #ajaxKeepInTouchForm select {
+    width: 320px; }
+  #frmSingleDonationFormForm .tt-menu, #frmRegularDonationFormForm .tt-menu, #contactPreferences .tt-menu, .caption-box .tt-menu {
+    background-color: #fff;
+    padding: 0 !important;
+    border: 1px solid #767676; }
+    #frmSingleDonationFormForm .tt-menu .tt-suggestion, #frmRegularDonationFormForm .tt-menu .tt-suggestion, #contactPreferences .tt-menu .tt-suggestion, .caption-box .tt-menu .tt-suggestion {
+      padding: .5em 10px;
+      cursor: pointer;
+      float: none !important; }
+    #frmSingleDonationFormForm .tt-menu .tt-cursor, #frmRegularDonationFormForm .tt-menu .tt-cursor, #contactPreferences .tt-menu .tt-cursor, .caption-box .tt-menu .tt-cursor {
+      background-color: #F5F5F5; }
+  #frmSingleDonationFormForm #giftDetails, #frmRegularDonationFormForm #giftDetails, #contactPreferences #giftDetails, .caption-box #giftDetails {
+    margin-top: 2rem; }
+    #frmSingleDonationFormForm #giftDetails .smaller .input-area .form-item, #frmRegularDonationFormForm #giftDetails .smaller .input-area .form-item, #contactPreferences #giftDetails .smaller .input-area .form-item, .caption-box #giftDetails .smaller .input-area .form-item {
+      float: left;
+      width: 250px;
+      clear: none; }
+      #frmSingleDonationFormForm #giftDetails .smaller .input-area .form-item + .form-item, #frmRegularDonationFormForm #giftDetails .smaller .input-area .form-item + .form-item, #contactPreferences #giftDetails .smaller .input-area .form-item + .form-item, .caption-box #giftDetails .smaller .input-area .form-item + .form-item {
+        margin-top: 0; }
+      #frmSingleDonationFormForm #giftDetails .smaller .input-area .form-item:last-child, #frmRegularDonationFormForm #giftDetails .smaller .input-area .form-item:last-child, #contactPreferences #giftDetails .smaller .input-area .form-item:last-child, .caption-box #giftDetails .smaller .input-area .form-item:last-child {
+        width: 250px;
+        margin-top: 0; }
+      @media only screen and (max-width: 959px) {
+        #frmSingleDonationFormForm #giftDetails .smaller .input-area .form-item, #frmRegularDonationFormForm #giftDetails .smaller .input-area .form-item, #contactPreferences #giftDetails .smaller .input-area .form-item, .caption-box #giftDetails .smaller .input-area .form-item {
+          width: 100%; }
+          #frmSingleDonationFormForm #giftDetails .smaller .input-area .form-item input, #frmRegularDonationFormForm #giftDetails .smaller .input-area .form-item input, #contactPreferences #giftDetails .smaller .input-area .form-item input, .caption-box #giftDetails .smaller .input-area .form-item input {
+            width: 270px !important; }
+          #frmSingleDonationFormForm #giftDetails .smaller .input-area .form-item:last-child, #frmRegularDonationFormForm #giftDetails .smaller .input-area .form-item:last-child, #contactPreferences #giftDetails .smaller .input-area .form-item:last-child, .caption-box #giftDetails .smaller .input-area .form-item:last-child {
+            margin-top: 1.5rem;
+            margin-left: 0;
+            width: 100%; } }
+  #frmSingleDonationFormForm .change-address, #frmRegularDonationFormForm .change-address, #contactPreferences .change-address, .caption-box .change-address {
+    margin-top: 2rem; }
+    #frmSingleDonationFormForm .change-address:before, #frmSingleDonationFormForm .change-address:after, #frmRegularDonationFormForm .change-address:before, #frmRegularDonationFormForm .change-address:after, #contactPreferences .change-address:before, #contactPreferences .change-address:after, .caption-box .change-address:before, .caption-box .change-address:after {
+      content: "";
+      display: table; }
+    #frmSingleDonationFormForm .change-address:after, #frmRegularDonationFormForm .change-address:after, #contactPreferences .change-address:after, .caption-box .change-address:after {
+      clear: both; }
+    #frmSingleDonationFormForm .change-address label p, #frmRegularDonationFormForm .change-address label p, #contactPreferences .change-address label p, .caption-box .change-address label p {
+      padding-top: 0.2rem; }
+
+.border-bottom {
+  border-bottom: 2px solid #E5E5E5;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem; }
+
+.borderless-bottom {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem; }
+
+.giftaid-cover h2, #directDebitDetails h2 {
+  position: relative;
+  margin-bottom: 1.175rem; }
+  .giftaid-cover h2:before, .giftaid-cover h2:after, #directDebitDetails h2:before, #directDebitDetails h2:after {
+    content: "";
+    display: table; }
+  .giftaid-cover h2:after, #directDebitDetails h2:after {
+    clear: both; }
+  .giftaid-cover h2 img, #directDebitDetails h2 img {
+    width: 170px;
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+.giftaid-cover {
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 0;
+  position: relative;
+  /*&::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(white,0.2);
+        z-index: 2;
+    }*/ }
+  .giftaid-cover .page {
+    position: relative;
+    z-index: 3; }
+  .giftaid-cover .input-area {
+    margin-top: 1.5rem; }
+    .giftaid-cover .input-area .item {
+      background-color: #F5F5F5;
+      padding: 1.25rem; }
+      .giftaid-cover .input-area .item:before, .giftaid-cover .input-area .item:after {
+        content: "";
+        display: table; }
+      .giftaid-cover .input-area .item:after {
+        clear: both; }
+
+#contactPreferences .input-area {
+  margin-top: 1.5rem; }
+
+#contactPreferences .table .options {
+  margin-bottom: 1rem; }
+  #contactPreferences .table .options:before, #contactPreferences .table .options:after {
+    content: "";
+    display: table; }
+  #contactPreferences .table .options:after {
+    clear: both; }
+  #contactPreferences .table .options .filler {
+    float: left;
+    width: 350px;
+    min-height: 1px; }
+  #contactPreferences .table .options p {
+    float: left;
+    width: 50px;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase; }
+    #contactPreferences .table .options p + p {
+      margin-top: 0; }
+
+#contactPreferences .table .content:before, #contactPreferences .table .content:after {
+  content: "";
+  display: table; }
+
+#contactPreferences .table .content:after {
+  clear: both; }
+
+#contactPreferences .table .content .item {
+  float: left;
+  width: 100%; }
+  #contactPreferences .table .content .item:before, #contactPreferences .table .content .item:after {
+    content: "";
+    display: table; }
+  #contactPreferences .table .content .item:after {
+    clear: both; }
+  #contactPreferences .table .content .item.input {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem; }
+  #contactPreferences .table .content .item + .item {
+    margin-top: 1rem; }
+    #contactPreferences .table .content .item + .item.input {
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem; }
+
+#contactPreferences .table label.checkbox {
+  float: left;
+  width: 350px;
+  font-weight: 400; }
+  #contactPreferences .table label.checkbox strong {
+    font-weight: 600; }
+  #contactPreferences .table label.checkbox .star {
+    color: #ed1c24;
+    display: inline-block; }
+  #contactPreferences .table label.checkbox ~ .button {
+    float: left;
+    width: 50px;
+    text-align: center;
+    position: relative; }
+    #contactPreferences .table label.checkbox ~ .button input {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 1.875rem;
+      height: 1.875rem;
+      opacity: 0;
+      cursor: pointer;
+      min-width: auto;
+      padding: 0;
+      margin: 0;
+      z-index: 3; }
+      #contactPreferences .table label.checkbox ~ .button input:checked ~ span::before {
+        opacity: 1; }
+    #contactPreferences .table label.checkbox ~ .button span {
+      width: 1.875rem;
+      height: 1.875rem;
+      display: block;
+      border: 2px solid #767676;
+      border-radius: 50%;
+      margin: 0 auto;
+      cursor: pointer; }
+      #contactPreferences .table label.checkbox ~ .button span::before {
+        width: 20px;
+        height: 20px;
+        display: block;
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        background-color: #011D49;
+        border-radius: 50%;
+        opacity: 0; }
+
+.keep-in-touch-thanks {
+  padding: 3rem 0;
+  background-color: #F5F5F5; }
+  .keep-in-touch-thanks .content:before, .keep-in-touch-thanks .content:after {
+    content: "";
+    display: table; }
+  .keep-in-touch-thanks .content:after {
+    clear: both; }
+  .keep-in-touch-thanks .content .left {
+    float: left;
+    width: calc(62% - 2rem);
+    margin-right: 2rem;
+    margin-top: 2rem; }
+    .keep-in-touch-thanks .content .left .buttonBar {
+      margin-top: 2rem; }
+  .keep-in-touch-thanks .content .right {
+    float: left;
+    width: 38%;
+    padding: 2rem;
+    background-color: white; }
+
+#thank-you-name {
+  text-transform: capitalize; }
+
+@media only screen and (min-width: 767px) and (max-width: 959px) {
+  #frmSingleDonationFormForm .image, #frmRegularDonationFormForm .image {
+    margin-top: 2rem; }
+  .keep-in-touch-thanks {
+    padding: 2rem 0; }
+    .keep-in-touch-thanks .content .left {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0; }
+    .keep-in-touch-thanks .content .right {
+      width: 100%;
+      padding: 2rem; } }
+
+@media only screen and (max-width: 766px) {
+  #frmSingleDonationFormForm .image, #frmRegularDonationFormForm .image {
+    margin-top: 1.25rem; }
+  #frmSingleDonationFormForm .text-area .preset-values, #frmRegularDonationFormForm .text-area .preset-values {
+    margin-bottom: 1.5rem; }
+    #frmSingleDonationFormForm .text-area .preset-values button, #frmRegularDonationFormForm .text-area .preset-values button {
+      width: calc(25% - 0.5rem);
+      margin-right: 0.6666667rem;
+      font-size: 1rem;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+      overflow: hidden; }
+  #frmSingleDonationFormForm .other-type, #frmRegularDonationFormForm .other-type {
+    font-size: 1rem; }
+  .giftaid-cover h2, #directDebitDetails h2 {
+    padding-right: calc(100px + 1rem); }
+    .giftaid-cover h2 img, #directDebitDetails h2 img {
+      width: 100px; }
+  .payment-btns button:not(.hidden) + button {
+    margin-left: 0; }
+  .payment-btns button {
+    width: 100%; }
+  #contactPreferences .input-area {
+    margin-top: 1.5rem; }
+  #contactPreferences .table .options {
+    float: right; }
+    #contactPreferences .table .options .filler {
+      display: none; }
+  #contactPreferences .table label.checkbox {
+    width: calc(100% - 100px);
+    padding-right: 1.25rem; }
+  .keep-in-touch-thanks {
+    padding: 2rem 0; }
+    .keep-in-touch-thanks .content .left {
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0; }
+      .keep-in-touch-thanks .content .left .input-area {
+        max-width: 450px; }
+    .keep-in-touch-thanks .content .right {
+      width: 100%;
+      padding: 2rem; }
+  #frmSingleDonationFormForm #myDetails .input-area .form-item, #frmSingleDonationFormForm #giftDetails .input-area .form-item, #frmRegularDonationFormForm #myDetails .input-area .form-item, #frmRegularDonationFormForm #giftDetails .input-area .form-item {
+    width: 100% !important; }
+    #frmSingleDonationFormForm #myDetails .input-area .form-item:nth-child(even), #frmSingleDonationFormForm #giftDetails .input-area .form-item:nth-child(even), #frmRegularDonationFormForm #myDetails .input-area .form-item:nth-child(even), #frmRegularDonationFormForm #giftDetails .input-area .form-item:nth-child(even) {
+      margin-left: 0;
+      margin-top: 1.5rem; }
+    #frmSingleDonationFormForm #myDetails .input-area .form-item input, #frmSingleDonationFormForm #myDetails .input-area .form-item select, #frmSingleDonationFormForm #giftDetails .input-area .form-item input, #frmSingleDonationFormForm #giftDetails .input-area .form-item select, #frmRegularDonationFormForm #myDetails .input-area .form-item input, #frmRegularDonationFormForm #myDetails .input-area .form-item select, #frmRegularDonationFormForm #giftDetails .input-area .form-item input, #frmRegularDonationFormForm #giftDetails .input-area .form-item select {
+      width: 270px; }
+    #frmSingleDonationFormForm #myDetails .input-area .form-item:last-child, #frmSingleDonationFormForm #giftDetails .input-area .form-item:last-child, #frmRegularDonationFormForm #myDetails .input-area .form-item:last-child, #frmRegularDonationFormForm #giftDetails .input-area .form-item:last-child {
+      width: 100%; }
+      #frmSingleDonationFormForm #myDetails .input-area .form-item:last-child input, #frmSingleDonationFormForm #giftDetails .input-area .form-item:last-child input, #frmRegularDonationFormForm #myDetails .input-area .form-item:last-child input, #frmRegularDonationFormForm #giftDetails .input-area .form-item:last-child input {
+        width: 400px; }
+  #frmSingleDonationFormForm #recipientAddress .input-area input, #frmSingleDonationFormForm #recipientAddress .input-area select, #frmSingleDonationFormForm #pnlAddress .input-area input, #frmSingleDonationFormForm #pnlAddress .input-area select, #frmSingleDonationFormForm #fundraising .input-area input, #frmSingleDonationFormForm #fundraising .input-area select, #frmSingleDonationFormForm #companyorganisation .input-area input, #frmSingleDonationFormForm #companyorganisation .input-area select, #frmSingleDonationFormForm #inMem .input-area input, #frmSingleDonationFormForm #inMem .input-area select, #frmSingleDonationFormForm #inCeleb .input-area input, #frmSingleDonationFormForm #inCeleb .input-area select, #frmSingleDonationFormForm #inMemPet .input-area input, #frmSingleDonationFormForm #inMemPet .input-area select, #frmRegularDonationFormForm #recipientAddress .input-area input, #frmRegularDonationFormForm #recipientAddress .input-area select, #frmRegularDonationFormForm #pnlAddress .input-area input, #frmRegularDonationFormForm #pnlAddress .input-area select, #frmRegularDonationFormForm #fundraising .input-area input, #frmRegularDonationFormForm #fundraising .input-area select, #frmRegularDonationFormForm #companyorganisation .input-area input, #frmRegularDonationFormForm #companyorganisation .input-area select, #frmRegularDonationFormForm #inMem .input-area input, #frmRegularDonationFormForm #inMem .input-area select, #frmRegularDonationFormForm #inCeleb .input-area input, #frmRegularDonationFormForm #inCeleb .input-area select, #frmRegularDonationFormForm #inMemPet .input-area input, #frmRegularDonationFormForm #inMemPet .input-area select {
+    width: 400px;
+    max-width: 400px; } }
+
+@media only screen and (max-width: 464px) {
+  #frmSingleDonationFormForm #myDetails .input-area .form-item:last-child input, #frmSingleDonationFormForm #giftDetails .input-area .form-item:last-child input, #frmRegularDonationFormForm #myDetails .input-area .form-item:last-child input, #frmRegularDonationFormForm #giftDetails .input-area .form-item:last-child input, #contactPreferences #myDetails .input-area .form-item:last-child input, #contactPreferences #giftDetails .input-area .form-item:last-child input {
+    width: 270px; }
+  #frmSingleDonationFormForm #recipientAddress .input-area input, #frmSingleDonationFormForm #recipientAddress .input-area select, #frmSingleDonationFormForm #pnlAddress .input-area input, #frmSingleDonationFormForm #pnlAddress .input-area select, #frmSingleDonationFormForm #fundraising .input-area input, #frmSingleDonationFormForm #fundraising .input-area select, #frmSingleDonationFormForm #companyorganisation .input-area input, #frmSingleDonationFormForm #companyorganisation .input-area select, #frmSingleDonationFormForm #inMem .input-area input, #frmSingleDonationFormForm #inMem .input-area select, #frmSingleDonationFormForm #inCeleb .input-area input, #frmSingleDonationFormForm #inCeleb .input-area select, #frmSingleDonationFormForm #inMem .input-area input, #frmSingleDonationFormForm #inMem .input-area select, #frmSingleDonationFormForm #inMemPet .input-area input, #frmSingleDonationFormForm #inMemPet .input-area select, #frmSingleDonationFormForm #contactPreferences .input-area input, #frmSingleDonationFormForm #contactPreferences .input-area select, #frmSingleDonationFormForm #directDebitDetails .input-area input, #frmSingleDonationFormForm #directDebitDetails .input-area select, #frmSingleDonationFormForm #ajaxKeepInTouchForm .input-area input, #frmSingleDonationFormForm #ajaxKeepInTouchForm .input-area select, #frmRegularDonationFormForm #recipientAddress .input-area input, #frmRegularDonationFormForm #recipientAddress .input-area select, #frmRegularDonationFormForm #pnlAddress .input-area input, #frmRegularDonationFormForm #pnlAddress .input-area select, #frmRegularDonationFormForm #fundraising .input-area input, #frmRegularDonationFormForm #fundraising .input-area select, #frmRegularDonationFormForm #companyorganisation .input-area input, #frmRegularDonationFormForm #companyorganisation .input-area select, #frmRegularDonationFormForm #inMem .input-area input, #frmRegularDonationFormForm #inMem .input-area select, #frmRegularDonationFormForm #inCeleb .input-area input, #frmRegularDonationFormForm #inCeleb .input-area select, #frmRegularDonationFormForm #inMem .input-area input, #frmRegularDonationFormForm #inMem .input-area select, #frmRegularDonationFormForm #inMemPet .input-area input, #frmRegularDonationFormForm #inMemPet .input-area select, #frmRegularDonationFormForm #contactPreferences .input-area input, #frmRegularDonationFormForm #contactPreferences .input-area select, #frmRegularDonationFormForm #directDebitDetails .input-area input, #frmRegularDonationFormForm #directDebitDetails .input-area select, #frmRegularDonationFormForm #ajaxKeepInTouchForm .input-area input, #frmRegularDonationFormForm #ajaxKeepInTouchForm .input-area select, #contactPreferences #recipientAddress .input-area input, #contactPreferences #recipientAddress .input-area select, #contactPreferences #pnlAddress .input-area input, #contactPreferences #pnlAddress .input-area select, #contactPreferences #fundraising .input-area input, #contactPreferences #fundraising .input-area select, #contactPreferences #companyorganisation .input-area input, #contactPreferences #companyorganisation .input-area select, #contactPreferences #inMem .input-area input, #contactPreferences #inMem .input-area select, #contactPreferences #inCeleb .input-area input, #contactPreferences #inCeleb .input-area select, #contactPreferences #inMem .input-area input, #contactPreferences #inMem .input-area select, #contactPreferences #inMemPet .input-area input, #contactPreferences #inMemPet .input-area select, #contactPreferences #contactPreferences .input-area input, #contactPreferences #contactPreferences .input-area select, #contactPreferences #directDebitDetails .input-area input, #contactPreferences #directDebitDetails .input-area select, #contactPreferences #ajaxKeepInTouchForm .input-area input, #contactPreferences #ajaxKeepInTouchForm .input-area select {
+    width: 270px;
+    max-width: 320px; }
+  #frmSingleDonationFormForm #directDebitDetails .input-area .sortCode, #frmRegularDonationFormForm #directDebitDetails .input-area .sortCode, #contactPreferences #directDebitDetails .input-area .sortCode {
+    width: 270px; } }
+
+@media only screen and (max-width: 959px) {
+  #frmSingleDonationFormForm .text-area, #frmRegularDonationFormForm .text-area {
+    width: 100%;
+    padding-right: 0; }
+    #frmSingleDonationFormForm .text-area .preset-values, #frmRegularDonationFormForm .text-area .preset-values {
+      max-width: 450px; }
+  #frmSingleDonationFormForm .image, #frmRegularDonationFormForm .image {
+    padding-left: 0;
+    width: 100%; }
+    #frmSingleDonationFormForm .image .item img, #frmRegularDonationFormForm .image .item img {
+      width: 100%; } }
+
+/*@include respond-max(650px) {
+    #frmSingleDonationFormForm, #frmRegularDonationFormForm {
+        #myDetails {
+            .input-area {
+                .form-item {
+                    &:nth-child(1), &:nth-child(2) {
+                        width: 200px;
+                        min-width: unset;
+                    }
+
+                    &:nth-child(3) {
+                        width: 288px;
+                        min-height: unset;
+
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #pnlAddress {
+        input, select {
+            min-width: unset;
+            width: 288px;
+        }
+    }
+}*/
+.top-section {
+  float: left;
+  width: 100%; }
+
+.sub-heading {
+  float: left;
+  width: 100%; }
+
+.wide-boxes {
+  float: left;
+  width: 100%; }
+
+.cover-image {
+  float: left;
+  width: 100%; }
+
+.other-ways-to-help {
+  float: left;
+  width: 100%; }
+
+footer {
+  float: left;
+  width: 100%; }
+
+.top-section {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  background-size: cover;
+  background-position: center; }
+  .top-section .page-large:before, .top-section .page-large:after {
+    content: "";
+    display: table; }
+  .top-section .page-large:after {
+    clear: both; }
+  .top-section .content {
+    background-color: white;
+    padding: 3rem;
+    float: left;
+    width: 50%; }
+    .top-section .content:before, .top-section .content:after {
+      content: "";
+      display: table; }
+    .top-section .content:after {
+      clear: both; }
+    .top-section .content .bottom {
+      float: left;
+      width: 100%; }
+      .top-section .content .bottom:before, .top-section .content .bottom:after {
+        content: "";
+        display: table; }
+      .top-section .content .bottom:after {
+        clear: both; }
+      .top-section .content .bottom button, .top-section .content .bottom a {
+        float: left;
+        width: 50%;
+        background-color: #ff8e00;
+        text-transform: uppercase;
+        padding: 1.4rem 2rem 1.4rem 0;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        color: black;
+        position: relative;
+        text-align: center;
+        font-weight: 700; }
+        .top-section .content .bottom button img, .top-section .content .bottom a img {
+          width: 1.25rem;
+          position: absolute;
+          right: 1rem;
+          top: calc(50% - 6px); }
+      .top-section .content .bottom .payment-deets {
+        float: right;
+        width: 50%;
+        padding-left: 1.5rem;
+        text-align: right; }
+        .top-section .content .bottom .payment-deets.regular-donation-fields ul {
+          align-items: center;
+          height: 100%; }
+        .top-section .content .bottom .payment-deets.regular-donation-fields img {
+          width: 100%;
+          max-width: 90px; }
+        .top-section .content .bottom .payment-deets ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          max-width: 152px;
+          float: right; }
+          .top-section .content .bottom .payment-deets ul:before, .top-section .content .bottom .payment-deets ul:after {
+            content: "";
+            display: table; }
+          .top-section .content .bottom .payment-deets ul:after {
+            clear: both; }
+          .top-section .content .bottom .payment-deets ul li {
+            float: left;
+            margin-left: 10px; }
+            .top-section .content .bottom .payment-deets ul li:before, .top-section .content .bottom .payment-deets ul li:after {
+              content: "";
+              display: table; }
+            .top-section .content .bottom .payment-deets ul li:after {
+              clear: both; }
+            .top-section .content .bottom .payment-deets ul li:nth-child(n+4) {
+              margin-top: 10px; }
+            .top-section .content .bottom .payment-deets ul li img {
+              float: left; }
+    .top-section .content p.intro {
+      margin-bottom: 1rem; }
+    .top-section .content .buttons {
+      float: left;
+      width: 100%;
+      background-color: #F5F5F5;
+      padding: 0.625rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      text-align: center; }
+      .top-section .content .buttons:before, .top-section .content .buttons:after {
+        content: "";
+        display: table; }
+      .top-section .content .buttons:after {
+        clear: both; }
+      .top-section .content .buttons button {
+        float: left;
+        width: 50%;
+        text-transform: uppercase;
+        padding: 1rem;
+        font-size: 1.1rem; }
+    .top-section .content .amount-buttons {
+      float: left;
+      width: 100%;
+      margin-bottom: 1.5rem; }
+      .top-section .content .amount-buttons:before, .top-section .content .amount-buttons:after {
+        content: "";
+        display: table; }
+      .top-section .content .amount-buttons:after {
+        clear: both; }
+      .top-section .content .amount-buttons button {
+        float: left;
+        width: calc(25% - 0.75rem);
+        margin-right: 1rem;
+        text-transform: uppercase;
+        padding-left: 0;
+        padding-right: 0; }
+        .top-section .content .amount-buttons button:nth-child(4n+4) {
+          margin-right: 0; }
+    .top-section .content .box {
+      background-color: #F5F5F5;
+      float: left;
+      width: 100%;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem; }
+      .top-section .content .box label {
+        font-size: 1.2rem;
+        font-weight: 700; }
+      .top-section .content .box input {
+        width: 170px;
+        min-width: unset; }
+      .top-section .content .box h3 {
+        font-weight: 300;
+        font-size: 1.25rem;
+        padding-bottom: 0.5rem; }
+      .top-section .content .box .other-amount input {
+        border-left: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        float: left;
+        font-size: 19px;
+        padding-bottom: 8px;
+        padding-left: 15px; }
+      .top-section .content .box .other-amount span.currency-box {
+        float: left;
+        display: inline-block;
+        width: 50px;
+        background-color: #011D49;
+        color: #FFFFFF;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 30px;
+        font-family: franklin-gothic-urw, sans-serif;
+        font-weight: 700;
+        height: 49px;
+        border: 4px solid #011D49;
+        border-bottom: 4px solid #011D49;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px; }
+    .top-section .content .social {
+      margin-top: 2rem; }
+      .top-section .content .social ul:before, .top-section .content .social ul:after {
+        content: "";
+        display: table; }
+      .top-section .content .social ul:after {
+        clear: both; }
+      .top-section .content .social ul li {
+        width: calc(50% - 0.5rem);
+        float: left;
+        background-color: #F5F5F5;
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.15rem; }
+        .top-section .content .social ul li a {
+          color: white;
+          text-decoration: none;
+          display: block;
+          padding: 1rem 0.3rem 0.8rem 0.3rem;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          font-size: 1rem; }
+          .top-section .content .social ul li a img {
+            filter: brightness(0) invert(100);
+            display: inline-block;
+            margin-right: 0.5rem;
+            position: relative; }
+        .top-section .content .social ul li:nth-child(odd) {
+          margin-right: 1rem; }
+        .top-section .content .social ul li.facebook {
+          background-color: #3b5998; }
+          .top-section .content .social ul li.facebook img {
+            width: 1.3rem; }
+        .top-section .content .social ul li.twitter {
+          background-color: #1da1f2; }
+          .top-section .content .social ul li.twitter img {
+            width: 1.5rem; }
+
+table {
+  background-color: #f5f5f5;
+  width: 100%; }
+  table tr + tr {
+    border-top: 1px solid #E5E5E5; }
+  table tr td {
+    padding: 1rem; }
+    table tr td:nth-child(2) {
+      font-weight: 600; }
+
+@media only screen and (max-width: 1019px) {
+  .top-section .content {
+    width: 62%; } }
+
+.sub-heading {
+  text-align: center;
+  padding: 5rem 0 0 0; }
+  .sub-heading h2 {
+    padding-bottom: 0; }
+
+.wide-boxes {
+  margin-top: 5rem; }
+  .wide-boxes .box {
+    background-color: #38d2e8;
+    position: relative; }
+    .wide-boxes .box:before, .wide-boxes .box:after {
+      content: "";
+      display: table; }
+    .wide-boxes .box:after {
+      clear: both; }
+    .wide-boxes .box + .box {
+      margin-top: 2rem; }
+    .wide-boxes .box .content {
+      float: left;
+      width: 50%;
+      padding: 2rem; }
+    .wide-boxes .box .image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-position: center;
+      background-size: cover; }
+    .wide-boxes .box:nth-child(odd) .image {
+      left: 0; }
+    .wide-boxes .box:nth-child(odd) .content {
+      margin-left: 50%; }
+
+.cover-image {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 15rem;
+  background-color: #F5F5F5;
+  text-align: center;
+  background-size: cover;
+  background-position: center; }
+
+.mobile-image {
+  display: none;
+  height: 0;
+  padding-top: 50%;
+  background-size: cover;
+  background-position: center;
+  float: left;
+  width: 100%; }
+
+.other-ways-to-help {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  .other-ways-to-help h2 {
+    text-align: center;
+    margin-bottom: 2rem; }
+  .other-ways-to-help .boxes {
+    display: flex;
+    flex-wrap: wrap; }
+    .other-ways-to-help .boxes:before, .other-ways-to-help .boxes:after {
+      content: "";
+      display: table; }
+    .other-ways-to-help .boxes:after {
+      clear: both; }
+    .other-ways-to-help .boxes .box {
+      float: left;
+      width: calc(33.333333% - 1.05rem);
+      margin-right: 1.5rem;
+      text-align: center;
+      position: relative; }
+      .other-ways-to-help .boxes .box:before, .other-ways-to-help .boxes .box:after {
+        content: "";
+        display: table; }
+      .other-ways-to-help .boxes .box:after {
+        clear: both; }
+      .other-ways-to-help .boxes .box img {
+        float: left;
+        width: 100%; }
+      .other-ways-to-help .boxes .box:nth-child(3n+3) {
+        margin-right: 0; }
+      .other-ways-to-help .boxes .box .inner {
+        float: left;
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 3.25rem; }
+      .other-ways-to-help .boxes .box h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.375rem; }
+      .other-ways-to-help .boxes .box p {
+        font-size: 15px;
+        font-family: franklin-gothic-urw, sans-serif; }
+      .other-ways-to-help .boxes .box a {
+        background-color: #38d2e8;
+        display: block;
+        width: 100%;
+        font-weight: 700;
+        padding: 1rem 3rem 1rem 1rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-decoration: none;
+        text-align: left; }
+        .other-ways-to-help .boxes .box a img {
+          width: 1.25rem;
+          position: absolute;
+          right: 1rem;
+          top: calc(50% - 6px); }
+
+body.appeal footer .helpAndSecurity {
+  display: none; }
+
+@media only screen and (min-width: 960px) {
+  .bottom .payment-deets.regular-donation-fields img {
+    padding-top: 18px; } }
+
+@media only screen and (max-width: 959px) {
+  .top-section {
+    background-image: url() !important; }
+    .top-section .content {
+      width: 100%;
+      padding: 0; }
+      .top-section .content .bottom {
+        display: flex; }
+        .top-section .content .bottom button, .top-section .content .bottom a {
+          width: 250px; }
+        .top-section .content .bottom .payment-deets {
+          width: calc(100% - 250px); }
+          .top-section .content .bottom .payment-deets ul {
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            height: 100%; }
+            .top-section .content .bottom .payment-deets ul li {
+              margin-left: 10px; }
+              .top-section .content .bottom .payment-deets ul li:nth-child(n+4) {
+                margin-top: 0; }
+              .top-section .content .bottom .payment-deets ul li:first-child {
+                margin-left: 0; }
+  .wide-boxes .box {
+    display: flex;
+    flex-wrap: wrap; }
+    .wide-boxes .box .image {
+      width: 100%;
+      height: 0;
+      padding-top: 70%;
+      position: static;
+      float: none;
+      order: 1; }
+    .wide-boxes .box .content {
+      width: 100%;
+      background-color: #38d2e8;
+      float: none;
+      order: 2; }
+    .wide-boxes .box:nth-child(odd) .content {
+      margin-left: 0; }
+  .mobile-image {
+    display: block; } }
+
+@media only screen and (max-width: 624px) {
+  .top-section .content .bottom .payment-deets ul li {
+    margin-left: 5px; } }
+
+@media only screen and (max-width: 766px) {
+  .top-section .content .bottom button, .top-section .content .bottom a {
+    width: 250px; }
+  .top-section .content .bottom .payment-deets {
+    width: calc(100% - 250px); }
+  .top-section .content .social ul li {
+    width: 100%; }
+    .top-section .content .social ul li:nth-child(odd) {
+      margin-right: 0;
+      margin-bottom: 1rem; }
+  .wide-boxes .box .image {
+    padding-top: 50%; }
+  .wide-boxes .box .content {
+    text-align: center;
+    padding: 1.5rem; }
+  .sub-heading {
+    padding: 2rem 0 0 0; }
+  .wide-boxes, .cover-image, .other-ways-to-help {
+    margin-top: 2rem; }
+  .other-ways-to-help {
+    margin-bottom: 3rem; }
+    .other-ways-to-help .boxes .box {
+      width: 100%;
+      margin-right: 0; }
+      .other-ways-to-help .boxes .box + .box {
+        margin-top: 3rem; } }
+
+@media only screen and (max-width: 599px) {
+  .top-section .content .bottom {
+    display: block; }
+    .top-section .content .bottom button, .top-section .content .bottom a {
+      width: 100%;
+      padding: 1.3rem 2rem 1.3rem 2rem;
+      text-align: left; }
+    .top-section .content .bottom .payment-deets {
+      width: 100%;
+      margin-top: 1rem;
+      padding-left: 0; }
+      .top-section .content .bottom .payment-deets ul {
+        text-align: center;
+        width: 100%;
+        justify-content: center; }
+        .top-section .content .bottom .payment-deets ul li {
+          float: none;
+          display: inline-block;
+          margin: 0 5px; }
+          .top-section .content .bottom .payment-deets ul li:last-child {
+            margin-right: 0; } }
+
+@media only screen and (max-width: 359px) {
+  .mobile-image {
+    padding-top: 75%; }
+  .top-section .content .bottom .payment-deets ul li img {
+    width: 32px; } }
+
+.donationSummaryTable .smaller-with-content {
+  position: relative; }
+  .donationSummaryTable .smaller-with-content:before, .donationSummaryTable .smaller-with-content:after {
+    content: "";
+    display: table; }
+  .donationSummaryTable .smaller-with-content:after {
+    clear: both; }
+  .donationSummaryTable .smaller-with-content h3 {
+    float: left;
+    width: calc(100% - 340px);
+    height: 58px;
+    display: flex;
+    align-items: center;
+    padding: 0; }
+  .donationSummaryTable .smaller-with-content a.amend {
+    float: left;
+    display: block;
+    padding: 1.25rem 1rem 1rem 1rem;
+    font-weight: 600;
+    background-color: #38d2e8;
+    color: black;
+    text-decoration: none;
+    height: 58px; }
+  .donationSummaryTable .smaller-with-content .image {
+    float: right;
+    height: 58px;
+    width: 125px;
+    display: flex;
+    align-items: center; }
+    .donationSummaryTable .smaller-with-content .image img {
+      width: 100%; }
+  .donationSummaryTable .smaller-with-content .table {
+    float: left;
+    width: calc(100% - 189px);
+    margin-top: 2rem; }
+
+#privacy .table {
+  margin-top: 1.5rem; }
+  #privacy .table ul {
+    margin-bottom: 1rem; }
+    #privacy .table ul li {
+      font-size: 1.1rem; }
+      #privacy .table ul li:before, #privacy .table ul li:after {
+        content: "";
+        display: table; }
+      #privacy .table ul li:after {
+        clear: both; }
+      #privacy .table ul li + li {
+        margin-top: 0.5rem; }
+      #privacy .table ul li strong {
+        font-weight: bold;
+        float: left;
+        width: 100px; }
+      #privacy .table ul li p {
+        float: left;
+        width: calc(100% - 100px);
+        padding-left: 1rem; }
+      @media only screen and (min-width: 767px) {
+        #privacy .table ul li a#contact-phone {
+          text-decoration: none; } }
+      #privacy .table ul li a#contact-address {
+        text-decoration: none; }
+
+.ddInfo ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem; }
+  .ddInfo ul li {
+    font-size: 1.1rem;
+    list-style-type: disc; }
+    .ddInfo ul li + li {
+      margin-top: 0.5rem; }
+
+#directDebitDetails ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem; }
+  #directDebitDetails ul li {
+    font-size: 1.1rem;
+    list-style-type: disc; }
+    #directDebitDetails ul li + li {
+      margin-top: 0.5rem; }
+
+#directDebitDetails .input-area {
+  margin-top: 1.5rem; }
+  #directDebitDetails .input-area .help {
+    float: left;
+    width: 100%;
+    margin-top: 1rem; }
+  #directDebitDetails .input-area .form-item {
+    width: 100%; }
+  #directDebitDetails .input-area .sortCode {
+    max-width: 370px; }
+    #directDebitDetails .input-area .sortCode:before, #directDebitDetails .input-area .sortCode:after {
+      content: "";
+      display: table; }
+    #directDebitDetails .input-area .sortCode:after {
+      clear: both; }
+    #directDebitDetails .input-area .sortCode .validation-box {
+      float: left;
+      width: calc(33.333333% - 0.7rem) !important;
+      margin-right: 1rem;
+      clear: none; }
+      #directDebitDetails .input-area .sortCode .validation-box:last-child {
+        margin-right: 0; }
+    #directDebitDetails .input-area .sortCode input {
+      width: 100% !important; }
+
+@media only screen and (max-width: 766px) {
+  #privacy .table ul li strong {
+    width: 100%;
+    margin-bottom: 0.25rem; }
+  #privacy .table ul li p {
+    width: 100%;
+    padding-left: 0; }
+  #directDebitDetails .input-area .sortCode {
+    max-width: 320px; } }
+
+@media only screen and (max-width: 959px) {
+  .donationSummaryTable .smaller-with-content h3 {
+    width: calc(100% - 270px); }
+  .donationSummaryTable .smaller-with-content .table {
+    width: 100%;
+    margin-top: 2rem; } }
+
+.regularSummaryButtons .smaller {
+  display: flex;
+  align-items: center; }
+  .regularSummaryButtons .smaller:before, .regularSummaryButtons .smaller:after {
+    content: "";
+    display: table; }
+  .regularSummaryButtons .smaller:after {
+    clear: both; }
+
+.regularSummaryButtons button {
+  float: left;
+  margin-right: 1rem; }
+
+.regularSummaryButtons p {
+  float: left; }
+
+@media only screen and (max-width: 766px) {
+  .donationSummaryTable .smaller-with-content h3 {
+    width: calc(100% - 125px);
+    margin-bottom: 58px; }
+  .donationSummaryTable .smaller-with-content a.amend {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    text-align: center; }
+  .donationSummaryTable .smaller-with-content .image {
+    width: 100px; }
+  .donationSummaryTable .smaller-with-content .table {
+    width: 100%;
+    margin-top: 2rem; }
+  .regularSummaryButtons .smaller {
+    display: block; }
+  .regularSummaryButtons button {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 1rem; }
+  .regularSummaryButtons p {
+    float: left; } }

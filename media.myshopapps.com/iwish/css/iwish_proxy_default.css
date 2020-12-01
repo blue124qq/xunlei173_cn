@@ -1,0 +1,22 @@
+.iwishProducts { margin: 0 -1%; padding: 0; }
+.iwishWrapper { margin-left: 10px; margin-right: 10px; }
+.iwishTitle { margin: 0 0 20px 0; }
+.iwishItem { width:23%; display: block; float:left; margin: 0 1% 2%; padding: 0; vertical-align: top; }
+.iwishItem form { margin: 0; }
+/*.iwishItem.first { clear: left; }
+.iwishItem.last { clear: right; }*/
+.iwishImgWrap { overflow: hidden; height: 225px; text-align: center; margin-bottom: 10px; }
+.iwishImgWrap a { height: 100%; }
+.iwishImgWrap img { max-width: 100%; max-height: 100%; }
+.iwishMeta { text-align: center; display: block; }
+.iwishMeta-title, .iwishMeta-price, .iwishMeta-variant-title { margin-bottom: 6px; }
+.iwishMeta-ctn { overflow: hidden; width: 100%; }
+.iwishRemoveBtn { display: inline-block; margin: 6px 0; }
+.iwishByeBtn, .iwishBuyBtn { display: inline-block; width:auto; background: #4B4B4B; border: 1px solid #363636; color: #FFFFFF; }
+.iwishByeBtn:hover, .iwishBuyBtn:hover { background: #222222; }
+.iwishMsgSuccess { color: #4F8A10; }
+.iwishMsgError { color: #D8000C; }
+
+@media only screen and (min-width: 768px) { .iwishItem:nth-child(4n+1) { clear: left; } }
+@media only screen and (max-width: 767px) { .iwishItem {width:48%;} .iwishItem:nth-child(2n+1) { clear: left; } /*.iwishItem.even{ clear: left; }*/ }
+@media only screen and (max-width: 360px) { .iwishItem {width:98%;} }

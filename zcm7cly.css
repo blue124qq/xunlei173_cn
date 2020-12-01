@@ -1,0 +1,105 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * franklin-gothic-ext-comp-urw:
+ *   - http://typekit.com/eulas/0000000000000000000118bf
+ *   - http://typekit.com/eulas/0000000000000000000118c0
+ * franklin-gothic-urw:
+ *   - http://typekit.com/eulas/000000000000000000012126
+ *   - http://typekit.com/eulas/0000000000000000000118ad
+ *   - http://typekit.com/eulas/000000000000000000011ce6
+ *   - http://typekit.com/eulas/0000000000000000000118b1
+ *   - http://typekit.com/eulas/0000000000000000000118b3
+ * franklin-gothic-urw-comp:
+ *   - http://typekit.com/eulas/0000000000000000000118bb
+ *   - http://typekit.com/eulas/0000000000000000000118bd
+ * franklin-gothic-urw-cond:
+ *   - http://typekit.com/eulas/00000000000000003b9b2244
+ *   - http://typekit.com/eulas/00000000000000003b9b2245
+ *   - http://typekit.com/eulas/0000000000000000000118b9
+ *
+ * © 2009-2020 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2018-11-13 10:34:10 UTC"}*/
+
+@import url("p-1_zcm7cly_tk_12783.12784.12785.css");
+
+@font-face {
+font-family:"franklin-gothic-urw";
+src:url("af/801a74/000000000000000000012126/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/801a74/000000000000000000012126/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/801a74/000000000000000000012126/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:300;
+}
+
+@font-face {
+font-family:"franklin-gothic-urw";
+src:url("af/9cb78a/0000000000000000000118ad/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/9cb78a/0000000000000000000118ad/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/9cb78a/0000000000000000000118ad/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"franklin-gothic-urw";
+src:url("af/2e6f07/000000000000000000011ce6/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/2e6f07/000000000000000000011ce6/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/2e6f07/000000000000000000011ce6/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:500;
+}
+
+@font-face {
+font-family:"franklin-gothic-urw";
+src:url("af/b825af/0000000000000000000118b1/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/b825af/0000000000000000000118b1/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/b825af/0000000000000000000118b1/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"franklin-gothic-urw";
+src:url("af/c7b613/0000000000000000000118b3/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/c7b613/0000000000000000000118b3/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/c7b613/0000000000000000000118b3/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:900;
+}
+
+@font-face {
+font-family:"franklin-gothic-ext-comp-urw";
+src:url("af/8d9b32/0000000000000000000118bf/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/8d9b32/0000000000000000000118bf/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/8d9b32/0000000000000000000118bf/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"franklin-gothic-ext-comp-urw";
+src:url("af/0de2a8/0000000000000000000118c0/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/0de2a8/0000000000000000000118c0/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/0de2a8/0000000000000000000118c0/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"franklin-gothic-urw-cond";
+src:url("af/bb00d4/00000000000000003b9b2244/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/bb00d4/00000000000000003b9b2244/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/bb00d4/00000000000000003b9b2244/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"franklin-gothic-urw-cond";
+src:url("af/a30f3c/00000000000000003b9b2245/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/a30f3c/00000000000000003b9b2245/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/a30f3c/00000000000000003b9b2245/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:500;
+}
+
+@font-face {
+font-family:"franklin-gothic-urw-cond";
+src:url("af/a2031c/0000000000000000000118b9/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/a2031c/0000000000000000000118b9/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/a2031c/0000000000000000000118b9/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"franklin-gothic-urw-comp";
+src:url("af/63b6fe/0000000000000000000118bb/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/63b6fe/0000000000000000000118bb/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/63b6fe/0000000000000000000118bb/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"franklin-gothic-urw-comp";
+src:url("af/7bc359/0000000000000000000118bd/27/l-7cdcb44be4a7db8877ffa5c0007b8d") format("woff2"),url("af/7bc359/0000000000000000000118bd/27/d-7cdcb44be4a7db8877ffa5c0007b8d") format("woff"),url("af/7bc359/0000000000000000000118bd/27/a-7cdcb44be4a7db8877ffa5c0007b8d") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+.tk-franklin-gothic-urw { font-family: "franklin-gothic-urw",sans-serif; }
+.tk-franklin-gothic-ext-comp-urw { font-family: "franklin-gothic-ext-comp-urw",sans-serif; }
+.tk-franklin-gothic-urw-cond { font-family: "franklin-gothic-urw-cond",sans-serif; }
+.tk-franklin-gothic-urw-comp { font-family: "franklin-gothic-urw-comp",sans-serif; }
